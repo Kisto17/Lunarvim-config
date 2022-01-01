@@ -152,6 +152,11 @@ _G.packer_plugins = {
     path = "/home/kiet/.local/share/lunarvim/site/pack/packer/opt/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["jaq-nvim"] = {
     loaded = true,
     path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/jaq-nvim",
