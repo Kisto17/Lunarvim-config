@@ -62,17 +62,17 @@ lvim.builtin.nvimtree.show_icons.git = 0
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
-  "bash",
-  "c",
-  "javascript",
-  "json",
-  "lua",
-  "python",
-  "typescript",
-  "css",
-  "rust",
-  "java",
-  "yaml",
+	"bash",
+	"c",
+	"javascript",
+	"json",
+	"lua",
+	"python",
+	"typescript",
+	"css",
+	"rust",
+	"java",
+	"yaml",
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
@@ -136,34 +136,34 @@ lvim.builtin.treesitter.highlight.enabled = true
 
 -- Additional Plugins
 lvim.plugins = {
-    {"folke/tokyonight.nvim"},
---Flutter tools
-  {
-    'akinsho/flutter-tools.nvim',
-    requires = 'nvim-lua/plenary.nvim',
-    config = require"plugins-config.flutter-tools-conf".setup()
-  },
---AutoSave
-  {
-    "Pocco81/AutoSave.nvim",
-    config = require"plugins-config.autosave-conf".setup()
-  },
---Jaq aka CodeRunner
-  {
-    "is0n/jaq-nvim",
-    config = require"plugins-config.jaq-conf".setup()
-  },
-  {
-    "lukas-reineke/indent-blankline.nvim",
-    config = require"plugins-config.indent-blankline-conf".setup()
-  },
-    {
-      "folke/trouble.nvim",
-      cmd = "TroubleToggle",
-    },
-  {
-    "EdenEast/nightfox.nvim"
-  },
+	{ "folke/tokyonight.nvim" },
+	--Flutter tools
+	{
+		"akinsho/flutter-tools.nvim",
+		requires = "nvim-lua/plenary.nvim",
+		config = require("plugins-config.flutter-tools-conf").setup(),
+	},
+	--AutoSave
+	{
+		"Pocco81/AutoSave.nvim",
+		config = require("plugins-config.autosave-conf").setup(),
+	},
+	--Jaq aka CodeRunner
+	{
+		"is0n/jaq-nvim",
+		config = require("plugins-config.jaq-conf").setup(),
+	},
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		config = require("plugins-config.indent-blankline-conf").setup(),
+	},
+	{
+		"folke/trouble.nvim",
+		cmd = "TroubleToggle",
+	},
+	{
+		"EdenEast/nightfox.nvim",
+	},
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
@@ -172,10 +172,10 @@ lvim.plugins = {
 
 --Builtin plugins config--
 --Hover doc fix for flutter-tools
-lvim.keys.normal_mode["K"] =  "<cmd>lua vim.lsp.buf.hover()<CR>"
+lvim.keys.normal_mode["K"] = "<cmd>lua vim.lsp.buf.hover()<CR>"
 --Avoid autoinstall lsp
 vim.list_extend(lvim.lsp.override, { "dartls" })
 --Lualine config
- require"plugins-config.lualine-conf".setup()
+require("plugins-config.lualine-conf").setup()
 --Formatters
-require'plugins-config.formatter-conf'.setup()
+require("plugins-config.formatter-conf").setup()
