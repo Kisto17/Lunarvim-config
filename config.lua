@@ -162,6 +162,9 @@ lvim.plugins = {
 		cmd = "TroubleToggle",
 	},
 	{
+		"wfxr/minimap.vim",
+	},
+	{
 		"EdenEast/nightfox.nvim",
 	},
 }
