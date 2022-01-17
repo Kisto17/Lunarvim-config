@@ -129,11 +129,6 @@ _G.packer_plugins = {
     path = "/home/kiet/.local/share/lunarvim/site/pack/packer/opt/dashboard-nvim",
     url = "https://github.com/ChristianChiarulli/dashboard-nvim"
   },
-  ["flutter-tools.nvim"] = {
-    loaded = true,
-    path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/flutter-tools.nvim",
-    url = "https://github.com/akinsho/flutter-tools.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/friendly-snippets",
@@ -174,11 +169,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/minimap.vim",
     url = "https://github.com/wfxr/minimap.vim"
-  },
-  ["nightfox.nvim"] = {
-    loaded = true,
-    path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/nightfox.nvim",
-    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nlsp-settings.nvim"] = {
     loaded = true,

@@ -137,12 +137,6 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- Additional Plugins
 lvim.plugins = {
 	{ "folke/tokyonight.nvim" },
-	--Flutter tools
-	{
-		"akinsho/flutter-tools.nvim",
-		requires = "nvim-lua/plenary.nvim",
-		config = require("plugins-config.flutter-tools-conf").setup(),
-	},
 	--AutoSave
 	{
 		"Pocco81/AutoSave.nvim",
@@ -164,9 +158,6 @@ lvim.plugins = {
 	{
 		"wfxr/minimap.vim",
 	},
-	{
-		"EdenEast/nightfox.nvim",
-	},
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
@@ -174,10 +165,7 @@ lvim.plugins = {
 -- }
 
 --Builtin plugins config--
---Hover doc fix for flutter-tools
-lvim.keys.normal_mode["K"] = "<cmd>lua vim.lsp.buf.hover()<CR>"
 --Avoid autoinstall lsp
-vim.list_extend(lvim.lsp.override, { "dartls" })
 --Lualine config
 require("plugins-config.lualine-conf").setup()
 --Formatters
