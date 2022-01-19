@@ -13,7 +13,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "tokyonight"
+lvim.colorscheme = "onedarker"
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
@@ -157,6 +157,9 @@ lvim.plugins = {
 	},
 	{
 		"wfxr/minimap.vim",
+    config = function ()
+      vim.cmd ("let g:minimap_auto_start = 1")
+    end
 	},
 }
 
@@ -164,9 +167,9 @@ lvim.plugins = {
 -- lvim.autocommands.custom_groups = { { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
 -- }
 
---Builtin plugins config--
---Avoid autoinstall lsp
---Lualine config
-require("plugins-config.lualine-conf").setup()
 --Formatters
 require("plugins-config.formatter-conf").setup()
+--make hover doc focusable
+lvim.lsp.float.focusable = true
+-- lualine config
+require"plugins-config.lualine-conf".setup()
