@@ -157,9 +157,6 @@ lvim.plugins = {
 	},
 	{
 		"wfxr/minimap.vim",
-    config = function ()
-      vim.cmd ("let g:minimap_auto_start = 1")
-    end
 	},
 }
 
