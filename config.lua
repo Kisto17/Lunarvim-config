@@ -158,6 +158,14 @@ lvim.plugins = {
 	{
 		"wfxr/minimap.vim",
 	},
+  {
+    "ray-x/lsp_signature.nvim",
+    require("lsp_signature").setup()
+  },
+  {
+    "norcalli/nvim-colorizer.lua",
+    require("colorizer").setup()
+  }
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
