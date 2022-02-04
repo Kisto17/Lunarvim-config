@@ -165,7 +165,7 @@ lvim.plugins = {
   },
   {
     "simrat39/symbols-outline.nvim",
-  }
+  },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)

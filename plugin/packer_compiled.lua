@@ -170,11 +170,6 @@ _G.packer_plugins = {
     path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["minimap.vim"] = {
-    loaded = true,
-    path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/minimap.vim",
-    url = "https://github.com/wfxr/minimap.vim"
-  },
   ["nlsp-settings.nvim"] = {
     loaded = true,
     path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/nlsp-settings.nvim",
@@ -261,6 +256,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/structlog.nvim",
     url = "https://github.com/Tastyep/structlog.nvim"
+  },
+  ["symbols-outline.nvim"] = {
+    loaded = true,
+    path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
