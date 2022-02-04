@@ -152,6 +152,11 @@ _G.packer_plugins = {
     path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/jaq-nvim",
     url = "https://github.com/is0n/jaq-nvim"
   },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
+  },
   ["lua-dev.nvim"] = {
     loaded = false,
     needs_bufread = false,
@@ -191,6 +196,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/kiet/.local/share/lunarvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,

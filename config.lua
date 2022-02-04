@@ -155,9 +155,6 @@ lvim.plugins = {
 		"folke/trouble.nvim",
 		cmd = "TroubleToggle",
 	},
-	{
-		"wfxr/minimap.vim",
-	},
   {
     "ray-x/lsp_signature.nvim",
     require("lsp_signature").setup()
@@ -165,6 +162,9 @@ lvim.plugins = {
   {
     "norcalli/nvim-colorizer.lua",
     require("colorizer").setup()
+  },
+  {
+    "simrat39/symbols-outline.nvim",
   }
 }
 
