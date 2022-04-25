@@ -26,17 +26,17 @@ lvim.builtin.nvimtree.show_icons.git = 0
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
-	"bash",
-	"c",
-	"javascript",
-	"json",
-	"lua",
-	"python",
-	"typescript",
-	"css",
-	"rust",
-	"java",
-	"yaml",
+  "bash",
+  "c",
+  "javascript",
+  "json",
+  "lua",
+  "python",
+  "typescript",
+  "css",
+  "rust",
+  "java",
+  "yaml",
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
@@ -44,25 +44,24 @@ lvim.builtin.treesitter.highlight.enabled = true
 
 -- Additional Plugins
 lvim.plugins = {
-	{ "folke/tokyonight.nvim" },
-	--AutoSave
-	{
-		"Pocco81/AutoSave.nvim",
-		config = require("plugins-config.autosave-conf").setup(),
-	},
-	--Jaq aka CodeRunner
-	{
-		"is0n/jaq-nvim",
-		config = require("plugins-config.jaq-conf").setup(),
-	},
-	{
-		"lukas-reineke/indent-blankline.nvim",
-		config = require("plugins-config.indent-blankline-conf").setup(),
-	},
-	{
-		"folke/trouble.nvim",
-		cmd = "TroubleToggle",
-	},
+  --AutoSave
+  {
+    "Pocco81/AutoSave.nvim",
+    config = require("plugins-config.autosave-conf").setup(),
+  },
+  --Jaq aka CodeRunner
+  {
+    "is0n/jaq-nvim",
+    config = require("plugins-config.jaq-conf").setup(),
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    config = require("plugins-config.indent-blankline-conf").setup(),
+  },
+  {
+    "folke/trouble.nvim",
+    cmd = "TroubleToggle",
+  },
   {
     "ray-x/lsp_signature.nvim",
     require("lsp_signature").setup()
@@ -77,6 +76,8 @@ lvim.plugins = {
 }
 
 --Formatters
-require("plugins-config.formatter-conf").setup()
+-- require("plugins-config.formatter-conf").setup()
 --make hover doc focusable
 lvim.lsp.float.focusable = true
+
+-- lvim.lsp.automatic_configuration.skipped_filetyps = "javascript"
