@@ -17,6 +17,16 @@ lvim.builtin.which_key.mappings["t"] = {
 	w = { "<cmd>Trouble lsp_workspace_diagnostics<cr>", "Diagnostics" },
 }
 
+--find and replace
+
+lvim.builtin.which_key.mappings["r"] = {
+	name = "Find and replace",
+	s = {
+		"viw:lua require('spectre').open_file_search()<cr>",
+		"just run",
+	},
+}
+
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.alpha.active = true
@@ -78,6 +88,7 @@ lvim.plugins = {
 	},
 	{
 		"windwp/nvim-spectre",
+		require("spectre").setup(),
 	},
 }
 
