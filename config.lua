@@ -73,15 +73,8 @@ lvim.plugins = {
 		"simrat39/symbols-outline.nvim",
 	},
 	{
-		"wfxr/minimap.vim",
-	},
-	{
 		"windwp/nvim-spectre",
 		require("spectre").setup(),
-	},
-	{
-		"NvChad/nvterm",
-		config = require("plugins-config.nvterm-conf").setup(),
 	},
 }
 
@@ -94,5 +87,6 @@ lvim.lsp.float.focusable = true
 -- lvim.lsp.automatic_configuration.skipped_filetyps = "javascript"
 lvim.builtin.lualine.sections.lualine_z = { "location" }
 
+-- horizontal term
 lvim.builtin.terminal.direction = "horizontal"
 lvim.builtin.terminal.size = 10
